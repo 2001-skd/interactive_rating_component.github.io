@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive-rating-component-main</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- rating component section starts -->
+    <section class="rating_card_container">
+      <div class="rating_card">
+        <img src="images/icon-star.svg" alt="star_icon" />
+        <h4 class="title">How did we do?</h4>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <div class="rating_form">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+          <button>Submit</button>
+        </div>
+      </div>
+
+      <!-- thanks card starts -->
+      <div class="thanks_card">
+        <div class="thanks_image">
+          <img
+            src="images/illustration-thank-you.svg"
+            alt="thanks_image_icon"
+          />
+          <p>You selected <span class="user_rating"></span> out of 5</p>
+        </div>
+        <div class="thanks_desc">
+          <h4 class="title">Thank You</h4>
+          <p class="description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+      <!-- thanks card ends -->
+    </section>
+    <!-- rating component section ends -->
+
+    <!-- script starts -->
+    <script src="script.js" defer></script>
+    <!-- script ends -->
+  </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg_color: #000;
+  --bg_gradient: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(216, 12%, 8%)
+  );
+  --orange: hsl(25, 97%, 53%);
+  --light_grey: hsl(217, 12%, 63%);
+  --dark_blue: hsl(213, 19%, 18%);
+  --very_dark_blue: hsl(216, 12%, 8%);
+}
+
+section {
+  background: var(--bg_color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating_card,
+.thanks_card {
+  background: var(--bg_gradient);
+  max-width: 380px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--very_dark_blue);
+  padding: 20px;
+}
+
+.rating_card img {
+  background: var(--dark_blue);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.description {
+  color: var(--light_grey);
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    background-color: var(--dark_blue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--orange);
+    }
+  }
+}
+
+button {
+  background: var(--orange);
+  border: none;
+  color: var(--dark_blue);
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.thanks_image,
+.thanks_desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thanks_image p {
+  color: var(--orange);
+  background-color: var(--dark_blue);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+li.selected {
+  background: var(--orange);
+}
+
+.thanks_card {
+  display: none;
+  transition: 0.5s all linear;
+}
