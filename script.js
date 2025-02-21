@@ -21,8 +21,12 @@ ratingButton.forEach((btn) =>
 );
 
 function showThankYou() {
-  rating.innerText = userRating;
-  thankYouCard.style.display = "block";
-  ratingCard.style.display = "none";
-  console.log(`You selected ${userRating} out of 5`);
+  if (userRating > 0) {
+    rating.innerText = userRating;
+    thankYouCard.style.display = "block";
+    ratingCard.style.display = "none";
+    console.log(`You selected ${userRating} out of 5`);
+  } else {
+    alert("Please select a rating before submitting.");
+  }
 }
